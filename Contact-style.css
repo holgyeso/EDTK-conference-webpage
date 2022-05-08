@@ -1,0 +1,114 @@
+:root {
+    --color-grey: #414141;
+    --color-lightgrey: #BFBFBF;
+    --color-teal: #056571;
+    --color-white: #F2F2F2;
+}
+
+.contact {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/** FORM **/
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    width: 50%;
+    margin: 0 5rem;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1.5px solid #ccc;
+    border-radius: 25px; 
+    padding: 1rem 1.5rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.contact-form input:focus, .contact-form input:active, .contact-form textarea:focus, .contact-form textarea:active {
+    outline: none;
+}
+
+#clientSubject, #clientMessage {
+    grid-column: 1/-1;
+}
+
+#submitButton {
+    max-width: 25rem;
+    grid-column: 1/-1;
+    justify-self: center;
+    width: 25%;
+}
+
+#clientMessage {
+    resize: vertical;
+    height: 10rem;
+}
+
+#submitButton {
+    border: 2px solid var(--color-teal);
+    background-color: var(--color-teal);
+    color: var(--color-white);
+    border-radius: 10px;
+    height: 3rem;
+    font-size: 1.8rem;
+    transition: all .3s;
+}
+
+#submitButton:hover {
+    background-color: white;
+    color: var(--color-teal);
+}
+
+/** CONTACT **/
+
+.contact-desc {
+    width: 50%;
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-desc svg {
+    width: 4rem;
+    height: 4rem;
+    min-width: 4rem;
+    min-height: 4rem;
+    stroke: var(--color-teal);
+}
+
+.contact-desc-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-desc-item:not(:last-of-type) {
+    margin-bottom: 3rem;
+}
+
+.contact-desc-item a {
+    text-decoration: none;
+    color: var(--color-grey);
+    padding: 0 1.5rem;
+    font-size: 1.3rem;
+}
+
+.contact-desc-item a:hover {
+    color: var(--color-teal)
+}
+
+.contact-desc-item p {
+    padding: 0.3rem 1.5rem;
+    font-size: 1.3rem;
+}
+
+.contact-desc-item p:first-of-type {
+    font-weight: bold;
+}
+

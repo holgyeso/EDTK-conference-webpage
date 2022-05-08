@@ -1,0 +1,46 @@
+:root {
+    --color-grey: #414141;
+    --color-lightgrey: #BFBFBF;
+    --color-teal: #056571;
+    --color-white: #F2F2F2;
+}
+
+#accordion {
+    margin: 0 5rem;
+}
+
+.accordion-img {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-teal);
+    color: var(--color-white);
+    font-size: 3rem;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2.5rem;
+}
+
+#accordion h3 {
+    background-color: rgba(129, 129, 129, 0.15);
+    font-size: 1.8rem;
+    padding-left: 0;
+}
+
+#accordion div {
+    background-color: rgba(129, 129, 129, 0.15);
+    font-size: 1.5rem;
+    padding: 2rem 0 5rem 7.5rem;
+    position: relative;
+}
+
+#accordion div::before {
+    content: "";
+    display: inline-block;
+    background-color: var(--color-lightgrey);
+    width: 4rem;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}

@@ -1,0 +1,135 @@
+:root {
+    --color-grey: #414141;
+    --color-lightgrey: #BFBFBF;
+    --color-teal: #056571;
+    --color-white: #F2F2F2;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.background-img {
+    background: linear-gradient(0deg, rgba(5, 101, 113, 0.35), rgba(5, 101, 113, 0.35)), url("image/login.jpg");
+    background-size: cover;
+    height: 70vh;
+    width: 50%;
+}
+
+.login-form {
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form h3 {
+    font-size: 3rem;
+    color: var(--color-teal);
+    margin-bottom: 4rem;
+}
+
+.login-form-field {
+    border: 1.5px solid #ccc;
+    border-radius: 25px; 
+    padding: 1rem 1.5rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    width: 50%;
+    margin: 2rem;
+    height: 5.5rem;
+}
+
+.login-form-field:focus, .login-form-field:active {
+    outline: none;
+}
+
+.login-form a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--color-grey);
+    margin-top: 2rem;
+}
+
+.login-form a:hover {
+    color: var(--color-teal);
+}
+
+.login-form button {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--color-teal);
+    border: 2px solid var(--color-teal);
+    border-radius: 20px;
+    color: var(--color-white);
+    transition: all .3s;
+}
+
+.login-form button:hover {
+    background-color: white;
+    color: var(--color-teal);
+}
+
+.login-form-and {
+    font-size: 1.5rem;
+    color: var(--color-lightgrey);
+    background-color: white;
+    z-index: 3;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.login-form-and p {
+    background-color: white;
+    z-index: 3;
+    position: relative;
+    padding: 0 1.5rem;
+}
+
+.login-form-and div {
+    width: 35vw;
+    height: 1.5px;
+    background-color: var(--color-lightgrey);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.login-form a:nth-of-type(2) {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    border: 2px solid var(--color-teal);
+    border-radius: 20px;
+    color: var(--color-teal);
+    transition: all .3s;
+}
+
+.login-form a:nth-of-type(2):hover {
+    background-color: var(--color-teal);
+    color: var(--color-white);
+}
+
+.login-error {
+    font-size: 1.5rem;
+    color: var(--color-teal);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .login-form {
+        width: 100%;
+    }
+
+    .background-img {
+        display: none;
+    }
+}

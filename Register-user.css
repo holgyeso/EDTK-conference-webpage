@@ -1,0 +1,36 @@
+:root {
+    --color-grey: #414141;
+    --color-lightgrey: #BFBFBF;
+    --color-teal: #056571;
+    --color-white: #F2F2F2;
+}
+
+.registration-status {
+    margin-left: 5rem;
+}
+
+.registration-status h1 {
+    font-size: 2rem;
+    color: var(--color-teal);
+    margin-bottom: 5rem;
+}
+.registration-status a {
+    text-decoration: none;
+    color: var(--color-grey);
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    background-color: white;
+    border: 2px solid var(--color-teal);
+    border-radius: 20px;
+    color: var(--color-teal);
+    transition: all .3s;
+}
+
+.registration-status a:hover {
+    background-color: var(--color-teal);
+    color: white;
+}
+
+.email-span {
+    color: var(--color-grey);
+}
